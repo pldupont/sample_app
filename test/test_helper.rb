@@ -6,8 +6,8 @@ require "minitest/reporters"
 module Minitest
   module Reporters
     class AwesomeReporter < DefaultReporter
-      GREEN = '1;32'
-      RED = '1;31'
+      GREEN = '0;32'
+      RED = '0;31'
 
       def color_up(string, color)
         color? ? "\e\[#{ color }m#{ string }#{ ANSI::Code::ENDCODE }" : string
