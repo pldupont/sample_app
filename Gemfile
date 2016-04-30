@@ -20,6 +20,7 @@ group :development, :test do
   gem 'byebug',      '3.4.0'
   gem 'spring',      '1.1.3'
   gem 'pry'
+  gem 'simplecov'
 end
 
 group :test do
