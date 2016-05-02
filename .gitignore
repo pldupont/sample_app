@@ -21,3 +21,6 @@
 
 # Ignore RubyMine files.
 /.idea
+
+# Ignore coverage files.
+/coverage
