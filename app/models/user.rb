@@ -4,6 +4,7 @@ class User < ActiveRecord::Base
   before_save :downcase_email
   before_create :create_activation_digest
   has_secure_password
+  has_many :microposts
 
   attr_accessor :remember_token, :activation_token, :reset_token
   validates :name, presence: true, length: {maximum: 50, minimum: 5}
